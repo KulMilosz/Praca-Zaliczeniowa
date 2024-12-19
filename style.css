@@ -1,0 +1,805 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.313rem 7.5rem 5.25rem;
+  width: 100%;
+  height: 500px;
+  background-color: #1f2041;
+  min-width: 320px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.875rem;
+}
+
+header ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#logo {
+  gap: 0.625rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #adb6c4;
+  width: auto;
+}
+
+#gold-header {
+  font-size: 2.25rem;
+  color: #d4af37;
+}
+
+#grey-header {
+  color: #adb6c4;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+#hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: #fff;
+  font-family: "League Gothic", sans-serif;
+}
+
+#hero-content :first-child {
+  font-family: "League Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 7.2rem;
+  align-items: center;
+}
+
+#hero-content :nth-child(2) {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.36rem;
+  align-items: center;
+}
+
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 5.25rem 7.5rem;
+  flex-grow: 1;
+  min-width: 320px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1920px;
+  justify-content: center;
+}
+
+#footer-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  padding: 2.313rem 7.5rem 2.313rem;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+  background-color: #1f2041;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+}
+
+#footer-left ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.875rem;
+  list-style: none;
+}
+
+#footer-left ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.172rem;
+}
+
+#footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  justify-content: end;
+}
+
+#footer-right p {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.172rem;
+}
+
+#logo-footer {
+  color: #adb6c4;
+  font-size: 1.688rem;
+  font-weight: 700;
+}
+
+#gold-footer {
+  font-size: 1.688rem;
+  font-weight: 700;
+  color: #d4af37;
+}
+
+#copy {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.172rem;
+  font-size: 1.688rem;
+}
+
+.homeDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 6.25rem 0px 6.25rem;
+  gap: 40px;
+}
+
+#contact-h2 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.812rem;
+  margin-bottom: 4.063rem;
+}
+
+.contactDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 4.063rem;
+  width: 100%;
+  align-items: center;
+}
+
+#contact-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.063rem;
+}
+
+.label {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  color: #1f2041;
+  line-height: 0.92rem;
+  gap: 1.688rem;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 0.125rem solid #1f2041;
+  padding: 0.2rem 0;
+  height: 2.5rem;
+}
+
+.multiButton {
+  height: 3.75rem;
+  width: 15rem;
+  padding: 0.9375rem 3.0625rem;
+  background-color: #adb6c4;
+  color: #1f2041;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 0px 0.25rem 0.25rem 0px #00000040;
+}
+
+#contact-div h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  line-height: 1.812rem;
+}
+
+.error {
+  margin-top: -1.25rem;
+  color: #8b0000;
+  font-size: 0.875rem;
+}
+
+.aboutP {
+  font-family: "League Spartan", sans-serif;
+  color: #1f2041;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.812rem;
+  padding-bottom: 1.063rem;
+}
+
+#about-button {
+  height: 3.75rem;
+  width: 15rem;
+  padding: 0.9375rem 3.0625rem;
+  background-color: #adb6c4;
+  color: #1f2041;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 0px 0.25rem 0.25rem 0px #00000040;
+}
+
+.aboutSpan {
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1.25rem;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+}
+
+#contact-button:hover,
+#about-button:hover,
+#projects-button:hover,
+#addProjects-button:hover,
+#home-left,
+#home-right {
+  cursor: pointer;
+}
+
+#messages-div {
+  display: flex;
+  flex-direction: column;
+  gap: 4.063rem;
+  font-family: "League Spartan", sans-serif !important;
+  font-weight: 700;
+  line-height: 0.92rem;
+  color: #1f2041;
+}
+
+#messages-div div {
+  display: flex;
+  flex-direction: column;
+}
+
+#messages-div div span {
+  font-family: "League Spartan", sans-serif !important;
+  font-weight: 700;
+  line-height: 0.92rem;
+  color: #1f2041;
+  word-wrap: break-word;
+}
+
+#no-messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#no-projects {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 0 !important;
+}
+
+#no-projects span {
+  font-family: "League Spartan", sans-serif !important;
+  font-weight: 700;
+  line-height: 0.92rem;
+  color: #1f2041;
+  word-wrap: break-word;
+}
+
+#projects-button {
+  height: 3.75rem;
+  width: 15rem;
+  padding: 0.9375rem 3.0625rem;
+  background-color: #adb6c4;
+  color: #1f2041;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 0px 0.25rem 0.25rem 0px #00000040;
+  flex: 1;
+  margin: 0 auto;
+}
+
+#projects-div {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  min-width: 320px;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#projects-pop {
+  width: 50rem;
+  height: auto;
+  background-color: #fff;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px #00000040 inset;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#close-button {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-right: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#close-button:hover {
+  color: #adb6c4;
+}
+
+#add-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 120px;
+  gap: 50px;
+}
+
+.projectsLabel {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  color: #1f2041;
+  line-height: 0.92rem;
+  gap: 1.688rem;
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+.projectsInput {
+  width: 100%;
+}
+
+#projects-form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.newProject {
+  width: auto;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/project.png");
+  gap: 20px;
+  border-radius: 16px;
+}
+
+.newProject h3,
+ul {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+}
+
+.newProject ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.newProject ul li {
+  list-style-position: inside;
+  width: 300px;
+}
+
+.newProject h3 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 18px;
+  line-height: 23.44px;
+}
+
+#projects-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.newProject {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.deleteProject {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-image: url("img/delete-project.png");
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#home-photo {
+  width: 100%;
+  padding-top: 40%;
+  background-image: url("/img/home-full.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+#textHome-div {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.homeTitles {
+  color: #1f2041;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+#skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px 75px;
+  justify-content: space-between;
+  padding: 20px 0px 80px 0px;
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  width: 182px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.skillLogo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.skillText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 108px;
+  text-align: left;
+}
+
+.skillTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.progressDots {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #1f2041;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.dot.filled {
+  background-color: #1f2041;
+}
+
+.skillYears {
+  font-size: 14px;
+  color: #555;
+}
+
+.skillContent {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#home-projects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#arrows-div {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+#home-left,
+#home-right {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+}
+
+#home-left {
+  background-image: url("/img/arrow-left.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+#home-right {
+  background-image: url("/img/arrow-right.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+@media (max-width: 1200px) {
+  #skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 40px;
+    justify-content: space-evenly;
+    padding: 20px 0px 80px 0px;
+  }
+
+  .homeDiv {
+    padding: 0px 2.25rem 0px 2.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #header-wrapper {
+    padding: 2.313rem 2.5rem 5.25rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeDiv {
+    padding: 0px 1.25rem 0px 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  #footer-wraper {
+    padding: 3.75rem 1.125rem;
+    height: fit-content;
+  }
+
+  #footer-left {
+    display: none;
+  }
+
+  #footer-wrapper {
+    height: 14.5rem;
+  }
+
+  header,
+  footer {
+    width: 100%;
+  }
+
+  #main-wrapper {
+    padding: 5.25rem 1rem;
+  }
+
+  .homeDiv {
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.875rem;
+    height: 1.25rem;
+    cursor: pointer;
+  }
+
+  #hamburger-menu .line {
+    background-color: #fff;
+    height: 0.1875rem;
+    width: 100%;
+    border-radius: 0.125rem;
+  }
+
+  #hamburger-menu.active .line {
+    background-color: #d4af37;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5.625rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #1f2041;
+    padding: 1.25rem 0;
+    z-index: 1000;
+    border-top: 0.0625rem solid #fff;
+    border-bottom: 0.0625rem solid #fff;
+    padding: 1.75rem 0 1.75rem 2.5rem;
+    box-shadow: 0px 0.25rem 0.25rem 0px #ffffff40;
+  }
+
+  #menu.active {
+    display: flex;
+  }
+
+  #menu li {
+    list-style: none;
+    text-align: start;
+  }
+
+  #menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  #menu li a:hover {
+    color: #adb6c4;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  #header-wrapper {
+    padding: 0.625rem 1rem 5rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #grey-header {
+    display: none;
+  }
+
+  #skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 40px;
+    justify-content: space-evenly;
+    padding: 20px 0px 80px 0px;
+  }
+}
+
+@media (max-width: 468px) {
+  #add-projects {
+    padding: 30px;
+  }
+
+  .newProject {
+    max-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #home-photo {
+    background-image: url("/img/home-crop.png");
+    height: 311px;
+  }
+
+  #skills-list {
+    justify-content: center;
+  }
+
+  #home-projects {
+    justify-content: center;
+  }
+}
