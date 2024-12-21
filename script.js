@@ -43,6 +43,11 @@ function renderPage(site) {
   if (contactButton) {
     contactButton.addEventListener("click", function () {
       setValidationEnabled(true);
+
+      const nameField = document.getElementById("name");
+      const emailField = document.getElementById("email");
+      const messageField = document.getElementById("message");
+
       if (nameField && emailField && messageField) {
         const isNameValid = validateForm(nameField);
         const isEmailValid = validateForm(emailField);
@@ -256,9 +261,6 @@ function addProjectsToSite(button, projectsWrapper) {
     });
   }
 
-  const nameField = document.getElementById("name");
-  const emailField = document.getElementById("email");
-  const messageField = document.getElementById("message");
   const titleField = document.getElementById("project-title");
   const technologiesField = document.getElementById("project-technologies");
 
